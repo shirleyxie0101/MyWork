@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Microsoft YaHei UI;
+}
+
+.header{
+    width: 100%;
+    height:80px;
+    background-color: #07cbc9;
+    position: fixed;
+    z-index:10;
+}
+.header .logo{
+    float:left;
+}
+.header img{
+    padding-left: 100px;
+    padding-top:16px;
+}
+.header .nav{
+    float:right;
+}
+.header .nav ul{
+    padding-right:80px;
+}
+.header .nav ul li{
+    float:left;
+    list-style: none;
+    padding-left: 20px;
+    height:80px;
+    line-height:80px;
+    font-size:14px;
+    font-weight:bold;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+}
+.header .nav ul li a:hover{
+    background-color: darkgrey;
+}
+
+.banner{
+    padding-top:80px;
+}
+.banner img{
+    width:100%;
+    height:500px;
+}
+.banner .TopLayer{
+    width:100%;
+    height:500px;
+    position: absolute;
+    top:80px;
+    left:0;
+    background-color: black;
+    opacity:0.5;
+    z-index:1;
+}
+.banner form{
+    width:509px;
+    height:355px;
+    position: absolute;
+    top:152.5px;
+    right:50%;
+    margin-right:-254.5px;
+    z-index:2;
+}
+.banner form input,
+.banner form textarea{
+    width:505px;
+    height:39px;
+    border:2px solid rgb(126,126,126);
+    margin-bottom: 15px;
+    text-indent: 1em;
+    line-height:39px;
+    background-color: transparent;
+    color:rgb(126,126,126);
+}
+.banner form input:hover,
+.banner form textarea:hover{
+    border:2px solid #07cbc9;
+}
+.banner form textarea{
+    height:115px;
+}
+.banner form #submit{
+    width:123px;
+    margin-left:191px;
+    text-align:center;
+    text-indent: 0;
+}
+.banner form #submit:hover{
+    border:0;
+    background-color: #07cbc9;
+}
+
+.about .aboutTop,
+.gallery .galleryTop{
+    width:500px;
+    margin:40px auto;
+    margin-bottom:30px;
+}
+.about .aboutTop .title,
+.gallery .galleryTop .title{
+    text-align:center;
+    font-weight: 800;
+    font-size:40px;
+}
+hr{
+    width:40px;
+    height:2px;
+    margin:10px auto;
+    background-color:#07cbc9;
+    border:0;
+}
+.about .aboutTop .describe,
+.gallery .galleryTop .describe{
+    text-align: center;
+    font-size:16px;
+    color:rgb(126,126,126);
+}
+.about .aboutMid{
+    width:1200px;
+    min-height:380px;
+    overflow: hidden;
+    zoom: 1;
+    margin:0 auto;
+    margin-bottom:70px;
+}
+.about .aboutMid .left,
+.about .aboutMid img,
+.about .aboutMid .right{
+    position:relative;
+    float:left;
+}
+.about .aboutMid img{
+    width:568px;
+    height:380px;
+    margin-left:316px;
+}
+.about .aboutMid .left{
+    width:370px;
+    height:370px;
+    margin-left:-100%;
+    right:-370px;
+}
+.about .aboutMid .left p{
+    font-size:32px;
+}
+.about .aboutMid .left .describe{
+    width:330px;
+    height:206px;
+    border:1px solid rgb(197,197,197);
+    background-color:rgba(255,255,255,0.5);
+    padding:20px;
+    font-size:17px;
+}
+.about .aboutMid .left .describe button{
+    width:102px;
+    height:45px;
+    border-radius: 0;
+    text-align:center;
+    margin-top: 25px;
+    border:0;
+    color:white;
+    background-color: black;
+    font-size:16px;
+    font-weight: bold;
+}
+.about .aboutMid .right{
+    width:238px;
+    max-height:380px;
+    margin-left: -238px;
+    right:-268px;
+}
+.about .aboutMid .right div{
+    width:238px;
+    height:129px;
+    border:1px solid #07cbc9;
+    text-align:center;
+    line-height:48px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+.about .aboutMid .right div p{
+    font-size:30px;
+    font-weight: 700;
+}
+.about .aboutMid .right div span{
+    font-size:20px;
+}
+.about .aboutBottom{
+    overflow: hidden;
+    zoom: 1;
+}
+.about .aboutBottom div{
+    width:25%;
+    min-width:150px;
+    height:350px;
+    background-color: #07cbc9;
+    color:white;
+    float:left;
+}
+.about .aboutBottom div img{
+    width:100%;
+    height:350px;
+}
+.about .aboutBottom div .texts{
+    width:80%;
+    height:80%;
+    padding:30px;
+    position: relative;
+}
+.about .aboutBottom div .texts h5{
+    padding:10px 0;
+}
+.about .aboutBottom div .texts p{
+    font-size:12px;
+    color:rgb(126,126,126);
+}
+.about .aboutBottom div .texts button{
+    width:90px;
+    height:35px;
+    border-radius: 0;
+    text-align:center;
+    border:0;
+    background-color: black;
+    color:white;
+    font-size:12px;
+    position: absolute;
+    margin:20% 50%;
+    left:-45px;
+}
+
+.gallery .galleryMain{
+    width:1140px;
+    height:653px;
+    margin:0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.gallery .galleryMain .modules{
+    float:left;
+    margin:10px;
+}
+.gallery .galleryMain .modules img{
+    width:360px;
+    height:240px;
+    vertical-align:bottom;
+}
+.gallery .galleryMain .modules .describe{
+    width:360px;
+    height:64px;
+    background-color: black;
+    color:white;
+    font-size:16px;
+    text-indent: 1em;
+    line-height:64px;
+}
+.footer{
+    width:100%;
+    height:80px;
+    background-color: #07cbc9;
+    margin-top:60px;
+}
+.footer p{
+    color:white;
+    font-size:16px;
+    text-align: center;
+    line-height: 80px;
+}
